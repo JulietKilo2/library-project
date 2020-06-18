@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: #e7e6dd; */
+    background-color: #F6F5F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 28vh;
+    /* background-color: #333333; */
+    background-color: #2D2D2B;
+    color: white;
+    margin: 0;
+    width: 100vw;
+}
+
+.add-interface {
+    margin: 5vh 0 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-container p {
+    margin: 8px;
+    align-self: start;
+}
+
+#title-box, #author-box, #pages-box {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    height: 30px;
+    border-color: grey;
+    opacity: 0.5;
+}
+
+#read-check {
+    display: flex;
+}
+
+#submit-button {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    /* background-color: skyblue; */
+    background-color: #f5a278;
+    color: white;
+    border: 1px solid;
+    margin: 0;
+    padding: 0;
+}
+
+#submit-button:hover {
+    background-color: #b37658;
+}
+
+#activate-container {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    /* background-color: darkcyan; */
+    background-color: #a34a28;
+    /* background-color: rgb(195, 158, 158); */
+    color: white;
+    border: 1px solid white;
+    margin: 0;
+    padding: 0;
+}
+
+#activate-container:hover {
+    background-color: #662f19;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 60vw;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0;
+    width: 18vw;
+    text-align: center;
+    background-color: #F0E4D8;
+    border-radius: 10px;
+    overflow-wrap: normal;
+}
+
+.book-item p {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.book-item:hover {
+    background-color: rgb(212, 200, 189);
+}
+
+.book-title {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.book-read {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: rgb(115, 41, 150);
+    color: white;
+}
+
+.book-unread {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: brown;
+    color: white;
+}
+
+.book-delete {
+    color: white;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: #f5a278;
+}
+
+.book-delete:hover {
+    background-color: #cc8662;
+}
